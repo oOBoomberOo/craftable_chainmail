@@ -1,0 +1,36 @@
+{
+	"criteria": {
+		"iron_ingot": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:iron_ingot"
+					}
+				]
+			}
+		},
+		"iron_nugget": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:iron_nugget"
+					}
+				]
+			}
+		},
+		"recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "boomber:craftable_elytra/elytra"
+			}
+		}
+	},
+	"requirements": [
+		["recipe", "iron_nugget", "iron_ingot"]
+	],
+	"rewards": {
+		"recipes": ["boomber:craftable_chainmail/chainmail_helmet"]
+	}
+}
